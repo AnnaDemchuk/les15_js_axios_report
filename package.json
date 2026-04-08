@@ -1,0 +1,35 @@
+{
+  "name": "les15_js_axios_report",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.15.0",
+    "dotenv": "^17.4.1",
+    "jest": "^30.3.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.4.0",
+    "jest-html-reporters": "^3.1.7"
+  },
+ "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters",
+        {
+          "publicPath": "./html-report",
+          "filename": "report.html",
+          "expand": true
+        }
+      ]
+    ]
+  }
+}
