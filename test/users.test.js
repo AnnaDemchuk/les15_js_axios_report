@@ -48,7 +48,6 @@ describe('api users', () => {
     expect(response.data).toHaveProperty('email');
     expect(response.data.username).toBe(updatedUser.username);
     expect(response.data.email).toBe(updatedUser.email);
-    expect(response.data.email).toBe(updatedUser.email);
   });
 
   test('Request Delete/users/id is successfull', async () => {
